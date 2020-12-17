@@ -1,0 +1,38 @@
+/* Här skapar jag en gradient bakgrund till body */
+
+body {
+    background-image: linear-gradient(red, yellow);
+}
+
+/* Här sätter jag texten i mitten */
+h1 {
+    text-align: center;
+}
+/* Här sätter jag texten i mitten */
+h2 {
+    text-align: center;
+}
+/* Här sätter jag texten i mitten */
+p {
+    text-align: center;
+}
+/* Här sätter jag padding-top för att det ska vara mellanrum uppåt men också max-width på bilderna och centrerar dem i mitten */
+.img-wrapper {
+    padding-top: 2%;
+    max-width: 40%;
+    margin: 0 auto;
+}
+/* Här sätter jag padding-top för att det ska vara mellanrum uppåt men också max-width på bilderna och centrerar dem i mitten */
+.img-wrapper-2 {
+    padding-top: 2%;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+/* Här definar jag widthen på container för att få den i en behaglig storlek och även gör ett mellanrumm neråt.  */
+.container {
+    width: 50%;
+    margin-bottom: 120px;
+}
+
+

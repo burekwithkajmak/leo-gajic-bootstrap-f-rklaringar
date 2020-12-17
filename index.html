@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Boostraphemsida</title>
+</head>
+<body>
+  
+
+  <!-- Här gör jag en navbar i bootstrap som är fixed bottom, alltså alltid nere på skärmen. Även väljer ett tema på den som bootstrap redan har.  -->
+  <nav class="navbar fixed-bottom navbar-expand-lg navbar-dark bg-dark">
+    <!-- Detta är en knapp som kommer upp vid exempelvis mobil användning för att navbaren inte ska vara i vägen för innehållet -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Detta är själva navbaren som antingen visas eller inte beroende på skärmstorleken -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- Detta är en ul lista som jag använder för att skapa själva navbaren -->
+      <ul class="navbar-nav">
+      <!-- Detta är ett navbar item och i den finns det en a tagg som jag använder för att man ska kunna orientera sig snabbt till olika ställen på hemsidan. -->
+      <li class="nav-item">
+        <a class="nav-link" href="#element">Element</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#html">HTML</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#id">ID</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#class">Class</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#meta">Meta</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#responsive">Responsive</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#http">Http</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#https">Https</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#compressed-data">Compressed-data</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#cdn">CDN</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#bootstrap">Bootstrap</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#jquery">Jquery</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#flexbox">Flexbox</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#grid">Grid</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#snippets">Code Snippets</a>
+      </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Här gör jag en horizantal line över och under h1 och h2 taggarna.  -->
+    <hr>
+      <h1>Begreppsförklaringar</h1>
+      <h2>Leo Gajic - TE19C</h2>
+    <hr>
+
+
+  <!-- Här gör lägger jag varje element i en container som bootstrap använder -->
+  <div class="container">
+    <!-- Här gör jag en div för hela förklaringen som jag sedan använder i a taggarna i navbaren (ul-taggen) -->
+    <div id="element">
+      <!-- Här gör jag en wrapper för bilden som jag sedan refferar till i cssen -->
+      <div class="img-wrapper">
+        <!-- Här gör jag en responsive img tagg -->
+        <img src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/code-512.png" class="img-fluid">
+      </div>
+      <!-- Här gör jag rubriken för förklaringen -->
+      <h2>Element</h2>
+      <!-- Här gör jag p taggen för förklaringen där all text är -->
+      <p>Ett HTML element är en komponent och används för att rendera webbsidor som är ubbyggt i strukturen HTML. Element kan ha flera attribut och elementet består oftast av en start och slut tagg.</p>
+      <!-- Här gör jag p taggen exempel rubriken -->
+      <p>Exempel:</p>
+       <!-- Här gör jag en wrapper för exempel bilden som jag sedan refferar till i cssen -->
+      <div class="img-wrapper-2">
+        <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--U2tDZb4---/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn-images-1.medium.com/max/2000/1%2ArenvPRCHZD4zCH-UQLmaHg.png" class="img-fluid">
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="html">
+      <div class="img-wrapper">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" class="img-fluid">
+      </div>
+      <h2>HTML</h2>
+      <p>HTML är förkortning för Hyper Text Markup Language. Det används för att skapa webbsidor. HTML beskriver strukturen för en webbsida. I HTML finns det även många olika element och elementet bestämmer vad webbläsaren ska visa.</p>
+      <p>Exempel:</p>
+      <div class="img-wrapper-2">
+        <img src="https://www.w3schools.com/html/img_notepad.png" class="img-fluid">
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="id">
+      <div class="img-wrapper">
+        <img src="https://img.icons8.com/ios/452/hashtag.png" class="img-fluid">
+      </div>
+      <h2>ID</h2>
+      <p>ID är ett attribute som specifierar ett unikt id för ett element. Det unika id används sedan för att refferar till elementet i exempelvis javascript eller css. ID kan också enbart användas för att ett element och inte flera.</p>
+      <p>Exempel:</p>
+      <div class="img-wrapper-2">
+        <img src="https://www.ibm.com/developerworks/library/wa-html5components1/slider-example-dom-tree.jpg" class="img-fluid">
+      </div>
+      <hr>
+    </div>
+  </div>
+  
+
+  <div class="container">
+    <div id="class">
+      <div class="img-wrapper">
+        <img src="https://pngimg.com/uploads/dot/dot_PNG4.png" class="img-fluid">
+      </div>
+      <h2>Class</h2>
+      <p>Class är ett attribute som specifierar ett unikt id för ett element. Det unika id används sedan för att refferar till elementet i exempelvis javascript eller css. Skillnaden mellan ett ID och en class är att ID enbart kan användas för at t identifiera ett element, medans en class kan användas för att identifiera flera.</p>
+      <p>Exempel:</p>
+      <div class="img-wrapper-2">
+        <img src="https://www.drupal.org/files/images/field_formatter_class_markup.png" class="img-fluid">
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="meta">
+      <div class="img-wrapper">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" class="img-fluid">
+      </div>
+      <h2>Meta</h2> 
+      <p>Meta taggen i HTML dokumentet definerar metadata om ett HTML dokument. Meta taggen hittas alltid i taggen head taggen.</p>
+      <p>Exempel:</p>
+      <div class="img-wrapper-2">
+        <img src="https://www.coforge.com/hs-fs/hubfs/Imported_Blog_Media/seo-meta-tags-html-750x309.png?width=750&height=309&name=seo-meta-tags-html-750x309.png" class="img-fluid">
+      </div>
+      <hr>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div id="responsive">
+      <div class="img-wrapper">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png" class="img-fluid">
+      </div>
+      <h2>Responsive</h2>
+      <p>Responsive webb design innebär att HTML och css automatiskt anpassar sig till användarens skärmstorlek.</p>
+      <p>Exempel:</p>
+      <div class="img-wrapper-2">
+        <img src="https://www.w3schools.com/css/img_temp_band.jpg" class="img-fluid">
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="http">
+      <div class="img-wrapper">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/HTTP_logo.svg/1200px-HTTP_logo.svg.png" class="img-fluid">
+      </div>
+      <h2>Http</h2>
+      <p>Http står för Hypertext Transfer Protocol och är ett kommunikationsprotokoll som används för att överföra och ladda upp webbsidor på internet.</p>
+      <p>Exempel:</p>
+      <div class="img-wrapper-2">
+        <img src="https://d6x8u9i2.rocketcdn.me/blog/wp-content/uploads/2018/10/http.png" class="img-fluid">
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="https">
+      <div class="img-wrapper">
+        <img src="https://image.flaticon.com/icons/png/512/1008/1008894.png" class="img-fluid">
+      </div>
+      <h2>Https</h2>
+      <p>Https står för Hypertext Transfer Protocol Secure som är ett protokoll för http fast krypterat och mer säkert.</p>
+      <hr>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="compressed-data">
+      <div class="img-wrapper">
+        <img src="https://www.flaticon.com/svg/static/icons/svg/1847/1847956.svg" class="img-fluid">
+      </div>
+      <h2>Compressed data</h2>
+      <p>Compressed data är data som har omkodats på ett mer effektivt sätt för att färre enheter ska behöva användas under transfer processen. Datan blir enkelt sagt mindre komprimerad.</p>
+      <p>Exempel:</p>
+      <div class="img-wrapper-2">
+        <img src="https://miro.medium.com/max/2288/0*IIFpkO7qDiZOFzVO.png" class="img-fluid">
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="cdn">
+      <div class="img-wrapper">
+        <img src="https://image.flaticon.com/icons/png/512/459/459131.png" class="img-fluid">
+      </div>
+      <h2>CDN</h2>
+      <p>CDN är ett innehållsleveransnätverk och hänvisar till en distribruerad grupp av servrar som arbetar tillsammans för att ha en effektiv leverans av internetinnehåll, som exempelvis HTML-sidor, js filer, bilder och videor.</p>
+      <p>Exempel:</p>
+      <div class="img-wrapper-2">
+        <img src="https://image.slidesharecdn.com/howtobuildcdnforyourwebsite-120401153831-phpapp01/95/how-to-build-cdn-for-your-website-18-728.jpg?cb=1333295183" class="img-fluid">
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="bootstrap">
+      <div class="img-wrapper">
+        <img src="https://sheleaps.org/wp-content/uploads/2018/07/Bootstrap-4-1.png" class="img-fluid">
+      </div>
+      <h2>Local bootstrap</h2>
+      <p>Den lokala bootstrap-metoden drar bootstrap exempel från ett område för varje datapunkt. Bootstrap används ofta för att bygga responsiva hemsidor.</p>
+      <p>Exempel:</p>
+      <div class="img-wrapper-2">
+        <img src="https://www.w3schools.com/bootstrap/imgdefault.jpg" class="img-fluid">
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="jquery">
+      <div class="img-wrapper">
+        <img src="https://cdn.iconscout.com/icon/free/png-512/jquery-10-1175155.png" class="img-fluid">
+      </div>
+      <h2>Jquery</h2>
+      <p>jQuery är ett Javascript-bibliotek som är tänkt att förenkla HTML-, DOM-, CSS-modifikation och AJAX för att snabba upp webbutvecklingen.</p>
+      <p>Exempel:</p>
+      <div class="img-wrapper-2">
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/129-1.png" class="img-fluid">
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="flexbox">
+      <div class="img-wrapper">
+        <img src="https://coryrylan.com/assets/images/posts/types/css.svg" class="img-fluid">
+      </div>
+      <h2>Flexbox</h2>
+      <p>Flexbox är en webblayoutmodell och används för att göra responsiva element i en container som automatiskt ordnas beroende på skärmstorlek.</p>
+      <p>Exempel:</p>
+      <div class="img-wrapper-2">
+        <img src="https://i.stack.imgur.com/tQCp5.png" class="img-fluid">
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="grid">
+      <div class="img-wrapper">
+        <img src="https://coryrylan.com/assets/images/posts/types/css.svg" class="img-fluid">
+      </div>
+      <h2>Grid</h2>
+      <p>CSS Grid layout är speciellt för att man kan dela en sida i större delar eller definera förhållandet i storlek, position och lager mellan olika HTML element. Man kan även göra exempelvis tabeller med kolumner och rader.</p>
+      <p>Exempel:</p>
+      <div class="img-wrapper-2">
+        <img src="https://gridbyexample.com/examples/images/example19.png" class="img-fluid">
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="snippets">
+      <div class="img-wrapper">
+        <img src="https://cdn.onlinewebfonts.com/svg/img_412399.png" class="img-fluid">
+      </div>
+      <h2>Code Snippets</h2>
+      <p>Code Snippets är återanvändbar källkod, maskinkod eller text.</p>
+      <p>Exempel:</p>
+      <div class="img-wrapper-2">
+        <img src="https://raw.githubusercontent.com/bahmutov/talks/master/images/first-paint-code-snippet.png" class="img-fluid">
+      </div>
+      <hr>
+    </div>
+  </div>
+
+</body>
+</html>
